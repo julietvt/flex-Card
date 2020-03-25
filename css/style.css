@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+:root{
+    --main-bg-color: #ffffff;
+    --user-im-size: 190px;
+    --user-im-border: 5px;
+
+}
+
+.flexContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.userCardContainer{
+    background-color: var(--main-bg-color);
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 35px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 20px 0;
+    min-width: 300px;
+    max-width: 320px;
+    flex-basis: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    box-shadow: 8px 8px 47px 7px #000000;
+    
+
+}
+.userInfoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 30px 20px;
+
+
+
+}
+.userCardContainer > header{
+    background-image: url("https://asiamountains.net/upload/slide/slide-1960x857-07.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 180px;
+
+}
+.userImageContainer{
+    height: var(--user-im-size);
+    width: var(--user-im-size);
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: var(--user-im-border);
+    border-color: var(--main-bg-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    margin-top: -37%
+
+}
+
+.userInfoContainer > footer{
+    margin-top: auto;
+
+}
+
+.contact{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin-top: 2em;
+    padding: 5px
+}
+
+.contact + contact{
+    margin-left: 15px;
+}
+
+.interval{
+    margin-top: 2em;
+}
